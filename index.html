@@ -55,6 +55,8 @@
     </div>
 
     <script>
+        document.getElementById("dob").min = "1968-07-26";
+        document.getElementById("dob").max = "2005-07-26";
         const retrieveEntries = () => {
             let entries = localStorage.getItem("user-Entries");
             return entries ? JSON.parse(entries) : [];
